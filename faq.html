@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="assets/dop.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/dop.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/dop.png" sizes="180x180">
+  <title>FAQs / DOP Industry</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: black;
+      background-color: black;
+    }
+
+    .faq-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ffffff;
+    }
+
+    .faq {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+    }
+
+    .question {
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      text-align: left;
+      font-size: 1.1rem;
+      color: #ffffff;
+      padding: 10px 0;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .question::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 10px;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+
+    .faq.open .question::after {
+      content: '-';
+      transform: rotate(180deg);
+    }
+
+    .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .faq.open .answer {
+      max-height: 300px;
+      margin-top: 10px;
+    }
+    .faq-wrapper{
+        margin-top: 10px;
+        background-color: rgb(31, 31, 31);
+        border-radius: 20px;
+        transform: scale(0.98);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="faq-wrapper">
+    <h1 class="qws">Frequently Asked Questions</h1>
+
+    <div class="faq">
+      <button class="question">What services do you offer?</button>
+      <div class="answer">
+        <p>We provide web development and graphic design services at highly affordable prices, with flexible packages starting at just ₹200.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="question">How can I contact you?</button>
+      <div class="answer">
+        <p>You can reach us directly through WhatsApp, Gmail, or Instagram. Just tap the contact button on our site.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="question">Do you provide mobile-friendly websites?</button>
+      <div class="answer">
+        <p>Absolutely. Every site we build is optimized for both desktop and mobile devices for a seamless user experience.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="question">Are your services beginner-friendly?</button>
+      <div class="answer">
+        <p>Yes! Whether you're an individual, small business, or creator, we help you get online without breaking the bank.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="question">Do you offer support after delivery?</button>
+      <div class="answer">
+        <p>We do offer support based on the selected plan. Basic help and updates are available for all customers.</p>
+      </div>
+    </div>
+    <div class="faq">
+        <button class="question">Will the price increase later?</button>
+        <div class="answer">
+          <p>No. We aim to reach more people without increasing costs. Our pricing remains fair and affordable.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button class="question">How fast can I get my website?</button>
+        <div class="answer">
+          <p>Most basic websites can be delivered within 3–7 days depending on your selected plan and requirements.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button class="question">Do I need technical knowledge to manage the site?</button>
+        <div class="answer">
+          <p>Not at all. We design the site so you can manage it easily. We also provide basic guidance if needed.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button class="question">Can I get updates or changes later?</button>
+        <div class="answer">
+          <p>Yes. You can request updates based on your plan. We offer flexible options for ongoing edits and additions.</p>
+        </div>
+      </div>
+      
+      <div class="faq">
+        <button class="question">Is my personal info safe with you?</button>
+        <div class="answer">
+          <p>Absolutely. We only ask for necessary info (like email and phone for contact). Nothing is collected secretly.</p>
+        </div>
+      </div>
+      
+  </section>
+
+  <script>
+    document.querySelectorAll('.faq .question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faq = button.parentElement;
+        const openFaq = document.querySelector('.faq.open');
+
+        if (openFaq && openFaq !== faq) {
+          openFaq.classList.remove('open');
+        }
+
+        faq.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+116
+block
+22:41
+117
+118
+animation: appear 5s linear;
+animation-timeline: view();
+119
+120
+121
+Cregtor Micro 2
+4
+animation-range: entry 0% cover
+
+\defaultSettings.json

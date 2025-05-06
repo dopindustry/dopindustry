@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+    body{
+        background-image: url(psd/noise.gif);
+    }
+    html{
+        scroll-behavior: smooth;
+      }
+    @font-face {
+        font-family: heddi;
+        src: url(Fonts/Canela-Regular-Trial.otf);
+    }
+    @font-face {
+        font-family: subb;
+        src: url(Fonts/02UtsukushiMincho.otf);
+    }
+    @font-face {
+        font-family: bolds;
+        src: url(Fonts/Brigast.ttf);
+    }
+    .sub{
+        background-color: rgb(39, 39, 39);
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #title{
+        display: block;
+        color: white;
+        font-size: 3rem;
+        font-family: heddi;
+        letter-spacing: 2px;
+        font-weight: 10;
+    }
+    .sesub{
+        background-color: rgb(39, 39, 39);
+        padding: 100px 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+        text-align: center;
+        overflow: hidden;
+        line-break:auto;
+    }
+    #para{
+        color: white;
+        margin-left: -2px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    #imgs{
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    #middle{
+        color: white;
+        opacity: 10%;
+        font-size: 1.4rem;
+        font-weight: 10;
+        font-family: subb;
+    }
+    .subtitlee{
+        margin-top: -70px;
+        color: white;
+        text-align: left;
+        margin-bottom: 50px;
+        font-family: heddi;
+        font-weight: 6;
+        font-size: 2.4rem;
+    }
+    .subdiv{
+        background-color: rgb(39, 39, 39);
+        padding: 100px 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+        text-align: center;
+        overflow: hidden;
+        line-break:auto;
+    }
+    .box{
+        .subtitle{
+            color: rgba(255, 255, 255, 0.651);
+            text-align: left;;
+            font-family: heddi;
+            font-weight: 6;
+            font-size: 2rem;
+            align-items: center;
+        }
+        align-content: left;
+        #parasub{
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+        }
+        }
+        .forms{
+            color: #ffffff;
+            text-decoration: underline;
+            font-family: subb;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            padding: 10px 30px;
+            max-width: 80px;
+            border-radius: 60px;
+            text-align: center;
+            align-items: center;
+            margin-left: 27%;
+            background-image: url(psd/4deffb4e-3a24-4d7b-9156-112b8de40e9b.gif);
+            background-position: -10px;
+        }
+}
