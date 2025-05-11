@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://dopindustry.pages.dev/</loc>
+        <lastmod>2025-05-11</lastmod>
+        <priority>1.0</priority>
+    </sitemap>
+    <sitemap>
+        <loc>https://dopindustry.pages.dev/clients.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <priority>0.8</priority>
+    </sitemap>
+    <sitemap>
+        <loc>https://dopindustry.pages.dev/faq.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <priority>0.7</priority>
+    </sitemap>
+    <sitemap>
+        <loc>https://dopindustry.pages.dev/plans.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <priority>0.7</priority>
+    </sitemap>
+    <sitemap>
+        <loc>https://dopindustry.pages.dev/privacy.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <priority>0.6</priority>
+    </sitemap>
+</sitemapindex>
