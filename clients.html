@@ -75,4 +75,53 @@
         </div>
     </div>
 </body>
+    <script>
+        //tail effect
+function createTrail(x, y) {
+  const dot = document.createElement('div');
+  dot.className = 'trail-dot';
+  dot.style.left = x + 'px';
+  dot.style.top = y + 'px';
+  document.body.appendChild(dot);
+
+  // Remove after animation
+  setTimeout(() => {
+    dot.remove();
+  }, 1000);
+}
+
+// Mouse move
+document.addEventListener('mousemove', (e) => {
+  createTrail(e.clientX, e.clientY);
+});
+
+// Touch move
+document.addEventListener('touchmove', (e) => {
+  const touch = e.touches[0];
+  createTrail(touch.clientX, touch.clientY);
+});
+
+// Optional: create trail on scroll
+window.addEventListener('scroll', () => {
+  const x = window.innerWidth / 2;
+  const y = window.innerHeight / 2;
+  createTrail(x, y); // trail appears in center
+});
+
+let lastTrailTime = 0;
+
+function createTrail(x, y) {
+  const now = performance.now();
+  if (now - lastTrailTime < 30) return; // max ~30fps
+  lastTrailTime = now;
+
+  const dot = document.createElement('div');
+  dot.className = 'trail-dot';
+  dot.style.left = x + 'px';
+  dot.style.top = y + 'px';
+  document.body.appendChild(dot);
+
+  setTimeout(() => dot.remove(), 1000);
+}
+    </script>
 </html>
