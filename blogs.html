@@ -64,6 +64,33 @@
       font-size: 1rem;
       color: #ddd;
     }
+      
+.trail-dot {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #ccc9c986, #9ba4b333 );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  outline: solid  rgb(0, 102, 255) 2px;
+  transform: translate(-50%, -50%) scale(1.5); /* head is thick */
+  animation: shrinkFade 1s forwards;
+  opacity: 1;
+  filter: blur(20px);
+}
+
+@keyframes shrinkFade {
+  0% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.2); /* tail is thin */
+    opacity: 0;
+  }
+}
+
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
