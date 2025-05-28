@@ -106,4 +106,31 @@
             background-image: url(psd/4deffb4e-3a24-4d7b-9156-112b8de40e9b.gif);
             background-position: -10px;
         }
+    
+.trail-dot {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #ccc9c986, #9ba4b333 );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  outline: solid  rgb(0, 102, 255) 2px;
+  transform: translate(-50%, -50%) scale(1.5); /* head is thick */
+  animation: shrinkFade 1s forwards;
+  opacity: 1;
+  filter: blur(20px);
+}
+
+@keyframes shrinkFade {
+  0% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.2); /* tail is thin */
+    opacity: 0;
+  }
+}
+
 }
